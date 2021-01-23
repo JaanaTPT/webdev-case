@@ -1,5 +1,8 @@
-$color: blue;
+@import "~bulma";
 
-body {
+$color: rgb(111, 152, 155);
+
+body,
+html {
     background-color: $color;
 }

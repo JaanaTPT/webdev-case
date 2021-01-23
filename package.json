@@ -4,12 +4,19 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "sass": "sass style.scss style.css --watch"
+    "sass": "sass style.scss style.css --watch",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bulma": "^0.9.1",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.32.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3"
   }
 }
