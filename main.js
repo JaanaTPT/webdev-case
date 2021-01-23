@@ -1,15 +1,33 @@
-require('bulma');
+// tavaline HTML:
 
-console.log('hello node');
-const module = require('./module.js');
-module.hello();
-module.goodbye();
+let el = document.getElementById('title');
+el.innerHTML = "Hello pure js"
 
-import common from './module.js';
-common.hello();
-common.goodbye();
+import Vue from 'vue/dist/vue.common.js';
 
-let num = 1;
-console.log(num) 
+import Demo from './demo.vue';
+Vue.component('demo', Demo);
 
-require('./main.ts');
+let app = new Vue ({
+    el: '#app',
+    data: {
+        message:"hello vue"
+    }
+
+})
+
+// require('bulma');
+
+// console.log('hello node');
+// const module = require('./module.js');
+// module.hello();
+// module.goodbye();
+
+// import common from './module.js';
+// common.hello();
+// common.goodbye();
+
+// let num = 1;
+// console.log(num) 
+
+// require('./main.ts');
